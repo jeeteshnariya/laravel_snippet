@@ -1,1 +1,1 @@
- #Laravel Snippet Collection
+#Laravel Snippet Collection
