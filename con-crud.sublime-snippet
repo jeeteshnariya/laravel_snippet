@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+
+	# Get request and view's 
+    public function index()  	#List data
+    {
+        ${1://}
+	}
+
+    public function create()  	#Add new form
+    {
+        //
+    }
+
+    public function show(\$id) 	#Show id data single page
+    {
+        //
+    }
+
+    public function edit(\$id) 	#Edit id data edit form
+    {
+        //
+    }
+
+    #Post,put and delete request 
+
+ 	public function store(Request \$request)  		#Recive data from sent by create()
+    {
+        //
+    }
+
+    public function update(Request \$request, \$id)  	#Recive data from sent by edit()
+    {
+        //
+    }
+
+    public function destroy(\$id)  					#Delete id data 
+    {
+        //
+    }
+
+	#<!-- end of all function  -->
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>con-crud</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope> 
+</snippet>

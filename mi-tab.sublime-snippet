@@ -1,0 +1,75 @@
+<snippet>
+	<content><![CDATA[
+
+\$table->softDeletes();
+\$table->rememberToken();
+
+//  BOL & ENUM
+\$table->boolean('confirmed');
+\$table->enum('choices', ['foo', 'bar']);
+
+//  ID 
+\$table->uuid('id');
+\$table->increments('id');
+\$table->smallIncrements('id');
+\$table->bigIncrements('id');
+\$table->mediumIncrements('id');
+
+\$table->binary('data');
+
+//   STRING
+\$table->char('name', 4);
+\$table->string('email');
+\$table->string('name', 100);
+\$table->text('description');
+\$table->longText('description');
+\$table->mediumText('description');
+
+//   INTEGER
+\$table->integer('votes');
+\$table->smallInteger('votes');
+\$table->mediumInteger('numbers');
+\$table->bigInteger('votes');
+
+\$table->float('amount', 8, 2);
+
+\$table->decimal('amount', 5, 2);
+\$table->double('column', 15, 8);
+
+\$table->unsignedBigInteger('votes');
+\$table->unsignedInteger('votes');
+\$table->unsignedMediumInteger('votes');
+\$table->unsignedSmallInteger('votes');
+\$table->unsignedTinyInteger('votes');
+
+//  DATE TIME
+\$table->date('created_at');
+\$table->dateTime('created_at');
+\$table->dateTimeTz('created_at');
+\$table->time('sunrise');
+\$table->timeTz('sunrise');
+\$table->tinyInteger('numbers');
+\$table->timestamp('added_on');
+\$table->timestampTz('added_on');
+\$table->timestamps();
+\$table->timestampsTz();
+
+//    IP & MAC
+\$table->ipAddress('visitor');
+\$table->macAddress('device');
+
+\$table->json('options');
+\$table->jsonb('options');
+
+\$table->morphs('taggable');
+\$table->nullableMorphs('taggable');
+\$table->nullableTimestamps();
+
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mi-tab</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
