@@ -9,7 +9,7 @@ Route::delete('${1:users}/{id}','${1/(.+)/\u$1/g}Controller@delete');				//Delet
 
 Route::put('${1:users}/{id}/image','${1/(.+)/\u$1/g}Controller@uploadImage');		//Image 	PUT /${1:users}/X/image 
 Route::get('${1:users}/{id}/favorites','${1/(.+)/\u$1/g}Controller@favorites');		//Favorites GET /${1:users}/X/favorites 
-Route::get('${1:users}/{user_id}/checkins','CheckinsController@index');	//Checkins 	GET /${1:users}/X/checkins 
+Route::get('${1:users}/{user_id}/checkins','CheckinsController@index');				//Checkins 	GET /${1:users}/X/checkins 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ro-api</tabTrigger>

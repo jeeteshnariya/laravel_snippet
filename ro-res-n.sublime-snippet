@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+// Resource For ${1/(.+)/\u$1/g}	
+${3:Route::resource('${1:posts}','${1/(.+)/\u$1/g}Controller');}
+${4:
+Route::get('${1:posts}', '${1/(.+)/\u$1/g}Controller@index')->name('${1:posts}.index');
+Route::get('${1:posts}/create', '${1/(.+)/\u$1/g}Controller@create')->name('${1:posts}.create');
+Route::get('${1:posts}/{${2:$1}\}', '${1/(.+)/\u$1/g}Controller@show')->name('${1:posts}.show');
+Route::get('${1:posts}/{${2:$1}\}/edit', '${1/(.+)/\u$1/g}Controller@edit')->name('${1:posts}.edit');
+
+Route::post('${1:posts}', '${1/(.+)/\u$1/g}Controller@store')->name('${1:posts}.store');
+Route::put('${1:posts}/{${2:$1}\}', '${1/(.+)/\u$1/g}Controller@update')->name('${1:posts}.update');
+Route::delete('${1:posts}/{${2:$1}\} ', '${1/(.+)/\u$1/g}Controller@destroy')->name('${1:posts}.destroy');
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ro-res-n</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope> 
+</snippet>
